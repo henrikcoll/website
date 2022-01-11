@@ -1,0 +1,16 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "minio": "^7.0.25",
+    "pg": "^8.7.1",
+    "socket.io": "^4.4.1"
+  }
+}

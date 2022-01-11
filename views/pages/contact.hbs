@@ -1,0 +1,12 @@
+<div class="container">
+	{{> navbar}}
+</div>
+
+<div class="container">
+	<h2>Links</h2>
+	<ul class="no-list-style">
+		{{#each allSocials}}
+			<li>{{title}}: {{#if link}}<a href="{{link}}">{{name}}</a>{{else}}{{name}}{{/if}}</li>
+		{{/each}}
+	</ul>
+</div>

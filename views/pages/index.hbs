@@ -1,0 +1,30 @@
+<div class="container">
+	{{> navbar}}
+</div>
+
+<div class="container">
+	<h2>Projects:</h2>
+	<ul>
+		{{#each featuredProjects}}
+			<li><a href="{{link}}">{{name}}</a> - {{description}}</li>
+		{{/each}}
+	</ul>
+</div>
+
+<div class="container">
+	<h2>Skills:</h2>
+	<ul>
+		<li>Node.JS, Elixir, C++</li>
+		<li>Docker, Nomad, Consul, Vault</li>
+		<li>Linux, Proxmox</li>
+	</ul>
+</div>
+
+<div class="container">
+	<h2>Links:</h2>
+	<ul>
+		{{#each featuredLinks}}
+			<li><a href="{{link}}">{{name}}</a></li>
+		{{/each}}
+	</ul>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+	{{> navbar}}
+</div>
+
+<div class="container">
+	<h2>Files</h2>
+	<ul>
+		{{#unless isroot}}
+			<li><a href="{{parrentPath}}">..</a></li>
+		{{/unless}}
+		{{#each allFiles}}
+			{{#if prefix}}
+				<li><a href="{{../originalUrl}}/{{prefix}}">{{prefix}}</a></li>
+			{{else}}
+				<li><a href="{{url}}">{{name}}</a></li>
+			{{/if}}
+		{{/each}}
+	</ul>
+</div>
