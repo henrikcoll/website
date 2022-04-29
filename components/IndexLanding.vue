@@ -2,6 +2,14 @@
 
 let image = '/img/henrikcoll.png';
 
+function scrollToProjects() {
+	document.getElementById("projects").scrollIntoView({behavior: 'smooth'});
+}
+
+function scrollToContact() {
+	document.getElementById("contact").scrollIntoView({behavior: 'smooth'});
+}
+
 </script>
 
 <template>
@@ -16,6 +24,14 @@ let image = '/img/henrikcoll.png';
 			<p class="relative z-20 mb-10 text-lg leading-7 text-gray-500 dark:text-white/90 lg:w-10/12">
 				I fritia liker å henge med venner og fikse på homelabben.
 			</p>
+			<div class="sm:flex sm:items-center">
+				<span class="w-full cursor-pointer rounded text-sm sm:text-base bg-teal-500 px-4 sm:px-8 py-4 text-center font-medium tracking-wide text-white hover:bg-teal-500/90 sm:w-1/3 md:w-auto" @click="scrollToProjects">
+					Se prosjekter
+				</span>
+				<span class="w-full text-sm sm:text-base cursor-pointer px-4 sm:px-8 py-4 text-center font-medium tracking-wide text-gray-600 hover:opacity-50 dark:text-white sm:w-auto" @click="scrollToContact">
+					Kontakt
+				</span>
+			</div>
 		</div>
 		<div class="sm:w-3/12 hidden lg:block">
 			<img :src="image" alt="memoji">

@@ -23,7 +23,7 @@ onMounted(() => {
 <template>
 	<div>
 		<Html :class="{'dark': darkmode}"></Html>
-		<Body class="antialiased mx-auto max-w-6xl xl:px-0 dark:bg-black"></Body>
+		<Body class="antialiased mx-auto max-w-6xl px-8 xl:px-0 dark:bg-black"></Body>
 		<NuxtLayout>
 		<NuxtPage/>
 		</NuxtLayout>

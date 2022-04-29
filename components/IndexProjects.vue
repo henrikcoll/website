@@ -33,7 +33,7 @@ let projects = [
 </script>
 
 <template>
-	<section class="py-12">
+	<section class="py-12" id="projects">
 		<h2 class="mb-12 text-4xl font-semibold text-black dark:text-white">
 			Prosjekter
 		</h2>
