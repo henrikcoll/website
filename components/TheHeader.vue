@@ -1,7 +1,13 @@
+<script setup>
+
+let darkmode = useDarkmode()
+
+</script>
+
 <template>
 	<div class="max-w-6xl mx-auto pt-6 pb-16">
 		<div class="flex items-center justify-between pb-5">
-			<a href="/" class="text-5xl font-bold text-white">
+			<a href="/" class="text-5xl font-bold dark:text-white">
 			Henrik
 			</a>
 			<div class="flex items-center">
@@ -21,6 +27,10 @@
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5576 0C5.03462 0 0.557617 4.484 0.557617 10.017C0.557617 14.442 3.42262 18.197 7.39662 19.521C7.89662 19.613 8.07862 19.304 8.07862 19.038C8.07862 18.801 8.07062 18.17 8.06562 17.335C5.28362 17.94 4.69662 15.992 4.69662 15.992C4.24262 14.834 3.58662 14.526 3.58662 14.526C2.67862 13.906 3.65562 13.918 3.65562 13.918C4.65862 13.988 5.18662 14.95 5.18662 14.95C6.07862 16.48 7.52762 16.038 8.09662 15.782C8.18862 15.135 8.44662 14.694 8.73262 14.444C6.51262 14.191 4.17762 13.331 4.17762 9.493C4.17762 8.4 4.56762 7.505 5.20662 6.805C5.10362 6.552 4.76062 5.533 5.30462 4.155C5.30462 4.155 6.14462 3.885 8.05462 5.181C8.87038 4.95851 9.71205 4.84519 10.5576 4.844C11.4076 4.848 12.2626 4.959 13.0616 5.181C14.9706 3.885 15.8086 4.154 15.8086 4.154C16.3546 5.533 16.0106 6.552 15.9086 6.805C16.5486 7.505 16.9366 8.4 16.9366 9.493C16.9366 13.341 14.5976 14.188 12.3706 14.436C12.7296 14.745 13.0486 15.356 13.0486 16.291C13.0486 17.629 13.0366 18.71 13.0366 19.038C13.0366 19.306 13.2166 19.618 13.7246 19.52C15.7159 18.8521 17.447 17.5753 18.6731 15.87C19.8992 14.1648 20.5585 12.1173 20.5576 10.017C20.5576 4.484 16.0796 0 10.5576 0Z"></path>
 						</svg>
 					</a>
+					<button class="dark:text-white" @click="darkmode = !darkmode">
+						<svg xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6 cursor-pointer fill-current text-slate-400 hover:text-slate-500 dark:block dark:text-slate-400 dark:hover:text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer fill-current text-slate-400 hover:text-slate-500 dark:hidden dark:text-slate-400 dark:hover:text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+					</button>
 				</div>
 			</div>
 		</div>

@@ -1,14 +1,29 @@
 <script setup>
-useHead({
-  bodyAttrs: {
-    class: 'antialiased mx-auto max-w-6xl xl:px-0'
-  }
+let darkmode = useDarkmode()
+
+onMounted(() => {
+	const isDarkModePreferred = window.matchMedia(
+		'(prefers-color-scheme: dark)'
+	).matches;
+
+	darkmode.value = isDarkModePreferred
+
+	window
+		.matchMedia("(prefers-color-scheme: dark)")
+		.addEventListener("change", (event) => {
+			darkmode.value = event.matches;
+		});
+
+	console.log(darkmode.value)
+
 })
 </script>
 
 
 <template>
 	<div>
+		<Html :class="{'dark': darkmode}"></Html>
+		<Body class="antialiased mx-auto max-w-6xl xl:px-0 dark:bg-black"></Body>
 		<NuxtLayout>
 		<NuxtPage/>
 		</NuxtLayout>
@@ -16,8 +31,4 @@ useHead({
 </template>
 
 <style>
-body {
-	background: black;
-	padding: 0 1rem;
-}
 </style>
