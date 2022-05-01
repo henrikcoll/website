@@ -4,9 +4,10 @@
 </script>
 
 <template>
-  <div class="py-12">
-	<IndexLanding />
-	<IndexAboutMe />
-	<IndexProjects />
-  </div>
+	<div class="py-12">
+		<Title>Henrik Næss</Title>
+		<IndexLanding />
+		<IndexAboutMe />
+		<IndexProjects />
+	</div>
 </template>

@@ -13,10 +13,8 @@ onMounted(() => {
 		.addEventListener("change", (event) => {
 			darkmode.value = event.matches;
 		});
+});
 
-	console.log(darkmode.value)
-
-})
 </script>
 
 
